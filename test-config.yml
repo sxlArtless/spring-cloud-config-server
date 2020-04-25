@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: deve
+  application:
+    name: test-cloud-dev
+
+server:
+  port: 8200
+
+---
+spring:
+  profile:
+    active: test
+  application:
+    name: test-cloud-test
+
+server:
+  port: 8200
+

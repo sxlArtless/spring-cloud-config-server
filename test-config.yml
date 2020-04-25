@@ -1,19 +1,22 @@
 spring:
   profiles:
-    active: dev
-  application:
-    name: test-cloud-dev
+    active: test
 
+---
 server:
   port: 8200
 
----
 spring:
-  profile:
-    active: test
+  profile: test
   application:
     name: test-cloud-test
 
+---
 server:
-  port: 8200
+  port: 8201
+
+spring:
+  profile: dev
+  application:
+    name: test-cloud-dev
 
